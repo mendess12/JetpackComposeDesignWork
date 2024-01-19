@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -28,7 +29,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    UseOfRow()
+                    Column {
+                        UseOfRow()
+                        UseOfColumn()
+                    }
                 }
             }
         }
@@ -60,10 +64,32 @@ fun UseOfRow() {
     }
 }
 
+@Composable
+fun UseOfColumn() {
+    Column {
+        Box(
+            modifier = Modifier
+                .size(80.dp)
+                .background(Color.Red)
+        )
+        Box(
+            modifier = Modifier
+                .size(50.dp)
+                .background(Color.Green)
+        )
+        Box(
+            modifier = Modifier
+                .size(100.dp)
+                .background(Color.Blue)
+        )
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     JetpackComposeDesignWorkTheme {
         UseOfRow()
+        UseOfColumn()
     }
 }
