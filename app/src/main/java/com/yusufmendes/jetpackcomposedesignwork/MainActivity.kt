@@ -28,11 +28,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Column {
-                        UseOfRow()
-                        UseOfColumn()
-                        UseOfBox()
-                    }
+                    UseOfRow()
+                    UseOfColumn()
+                    UseOfBox()
+                    UseMixed()
                 }
             }
         }
@@ -102,6 +101,47 @@ fun UseOfBox() {
     }
 }
 
+@Composable
+fun UseMixed() {
+    Row {
+        Box(
+            modifier = Modifier
+                .size(100.dp)
+                .background(Color.Red)
+        )
+        Box(
+            modifier = Modifier
+                .size(100.dp)
+                .background(Color.Green)
+        )
+        Column {
+            Box(
+                modifier = Modifier
+                    .size(100.dp)
+                    .background(Color.Blue)
+            )
+
+            Box(
+                modifier = Modifier
+                    .size(100.dp)
+                    .background(Color.Yellow)
+            )
+        }
+        Box {
+            Box(
+                modifier = Modifier
+                    .size(100.dp)
+                    .background(Color.Black)
+            )
+            Box(
+                modifier = Modifier
+                    .size(80.dp)
+                    .background(Color.White)
+            )
+        }
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
@@ -109,5 +149,6 @@ fun GreetingPreview() {
         UseOfRow()
         UseOfColumn()
         UseOfBox()
+        UseMixed()
     }
 }
