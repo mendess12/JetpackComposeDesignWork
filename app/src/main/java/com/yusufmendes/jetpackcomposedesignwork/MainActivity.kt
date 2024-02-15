@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -32,12 +33,13 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    UseOfRow()
+                    /*UseOfRow()
                     UseOfColumn()
-                   /* UseOfBox()
+                    UseOfBox()
                     UseMixed()
                     UseOfArrangement()
                     UseOfAlignment()*/
+                    UseOfAlign()
                 }
             }
         }
@@ -236,15 +238,29 @@ fun UseOfAlignment() {
     }
 }
 
+@Composable
+fun UseOfAlign() {
+    Box(
+        modifier = Modifier
+            .size(200.dp)
+            .background(Color.Red)
+    ) {
+        Text(
+            text = "Hello Kotlin", modifier = Modifier.align(Alignment.Center)
+        )
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     JetpackComposeDesignWorkTheme {
-        UseOfRow()
+        /*UseOfRow()
         UseOfColumn()
-       /* UseOfBox()
+        UseOfBox()
         UseMixed()
         UseOfArrangement()
         UseOfAlignment()*/
+        UseOfAlign()
     }
 }
