@@ -35,9 +35,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    UseOfRow()
-                    /*UseOfColumn()
-                    UseOfBox()
+                   // UseOfRow()
+                    UseOfColumn()
+                    /*UseOfBox()
                     UseMixed()
                     UseOfArrangement()
                     UseOfAlignment()
@@ -79,16 +79,19 @@ fun UseOfColumn() {
             modifier = Modifier
                 .size(80.dp)
                 .background(Color.Red)
+                .weight(50f)
         )
         Box(
             modifier = Modifier
                 .size(50.dp)
                 .background(Color.Green)
+                .weight(30f)
         )
         Box(
             modifier = Modifier
                 .size(100.dp)
                 .background(Color.Blue)
+                .weight(20f)
         )
     }
 }
@@ -260,9 +263,9 @@ fun UseOfAlign() {
 @Composable
 fun GreetingPreview() {
     JetpackComposeDesignWorkTheme {
-        UseOfRow()
-        /*UseOfColumn()
-        UseOfBox()
+       // UseOfRow()
+        UseOfColumn()
+        /*UseOfBox()
         UseMixed()
         UseOfArrangement()
         UseOfAlignment()
