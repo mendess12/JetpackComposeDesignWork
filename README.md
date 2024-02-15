@@ -25,3 +25,13 @@
 - In Row or Column, if it is Row, alignment is done vertically, if it is Column, alignment is done horizontally.
 
 ![alignment](https://github.com/mendess12/JetpackComposeDesignWork/assets/76566952/4677f95d-d38c-40de-b2da-05b2c834d499)
+
+### Align
+- It aligns itself according to the area it is in.
+
+![align](https://github.com/mendess12/JetpackComposeDesignWork/assets/76566952/06b0e8c9-10c3-424b-a2e8-4dd2524cf137)
+
+### Spacer
+- It is used to leave a space between visual objects.
+
+![spacer](https://github.com/mendess12/JetpackComposeDesignWork/assets/76566952/0a27132f-1213-491c-9e82-75d88846a50f)
