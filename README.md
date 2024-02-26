@@ -35,3 +35,8 @@
 - It is used to leave a space between visual objects.
 
 ![spacer](https://github.com/mendess12/JetpackComposeDesignWork/assets/76566952/0a27132f-1213-491c-9e82-75d88846a50f)
+
+# Screen Design
+| Example One             | Login Screen     |
+| ------------------------- | ------------------------- |
+| ![example-one](https://github.com/mendess12/JetpackComposeDesignWork/assets/76566952/03e4aa27-3b34-41f0-a5fa-8cfeae689e6d) | ![login](https://github.com/mendess12/JetpackComposeDesignWork/assets/76566952/4b0de5d2-0ae9-45c6-9b6f-a8be14382459) | 
