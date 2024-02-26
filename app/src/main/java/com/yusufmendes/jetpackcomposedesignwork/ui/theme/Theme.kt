@@ -13,7 +13,9 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.res.colorResource
 import androidx.core.view.WindowCompat
+import com.yusufmendes.jetpackcomposedesignwork.R
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -54,10 +56,11 @@ fun JetpackComposeDesignWorkTheme(
         else -> LightColorScheme
     }
     val view = LocalView.current
+    val statusBarColor = colorResource(id = R.color.dark_orange).toArgb()
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            window.statusBarColor = colorScheme.primary.toArgb()
+            window.statusBarColor = statusBarColor
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
         }
     }
