@@ -13,6 +13,16 @@
         android:theme="@style/Theme.JetpackComposeDesignWork"
         tools:targetApi="31">
         <activity
+            android:name=".ExampleRecipeScreen"
+            android:exported="false"
+            android:label="@string/title_activity_example_recipe_screen"
+            android:theme="@style/Theme.JetpackComposeDesignWork" />
+        <activity
+            android:name=".ExampleLoginScreen"
+            android:exported="false"
+            android:label="@string/title_activity_example_login_screen"
+            android:theme="@style/Theme.JetpackComposeDesignWork" />
+        <activity
             android:name=".ExampleOne"
             android:exported="false"
             android:label="@string/title_activity_example_one"

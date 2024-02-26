@@ -10,4 +10,7 @@
     <color name="red">#EC1010</color>
     <color name="main_color">#607D8B</color>
     <color name="main_dark_color">#485E68</color>
+    <color name="orange">#FF9801</color>
+    <color name="dark_orange">#BF7100</color>
+    <color name="other_color">#FF6E40</color>
 </resources>
