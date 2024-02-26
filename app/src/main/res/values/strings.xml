@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JetpackComposeDesignWork</string>
+    <string name="title_activity_example_one">ExampleOne</string>
 </resources>
